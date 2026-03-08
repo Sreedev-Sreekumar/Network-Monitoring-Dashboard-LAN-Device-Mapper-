@@ -205,3 +205,54 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+......
+
+Step 1 — Install Streamlit
+
+Open VS Code Terminal and run:
+
+pip install streamlit
+
+Wait until installation finishes.
+
+Step 2 — Verify installation
+
+Run:
+
+pip show streamlit
+
+If installed, it will show something like:
+
+Name: streamlit
+Version: 1.xx.x
+Location: ...
+
+Step 3 — Run using Python (best fix)
+
+If the command still fails, run Streamlit like this:
+
+python -m streamlit run network_monitor.py
+
+This always works, even if PATH is not configured.
+
+✅ Correct command you should run
+python -m streamlit run network_monitor.py
+
+NOT
+
+streamlit run network_monitor.py
+After running it
+
+Your browser will automatically open something like:
+
+Local URL: http://localhost:8501
+
+Then your Network Monitoring Dashboard will appear.
+
+When running, the terminal will show:
+
+You can now view your Streamlit app in your browser.
+Local URL: http://localhost:8501
+
+Open that link and show it during project presentation.
