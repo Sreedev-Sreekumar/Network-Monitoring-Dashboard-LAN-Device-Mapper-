@@ -45,7 +45,7 @@ if st.button("🔍 Scan Network"):
 
     st.info(f"Scanning Network: {network}.x")
 
-    for i in range(1, 60):
+    for i in range(1, 255):   //(for i in range(1, 60):)
 
         ip = f"{network}.{i}"
 
@@ -71,5 +71,6 @@ if st.button("🔍 Scan Network"):
         st.dataframe(df)
 
     else:
+
 
         st.warning("No active devices detected")
